@@ -1,3 +1,10 @@
-#Path finding visualization tool#
+# Path finding visualization tool
 
-Mise en application de l'algorithme A* pour tracer le chemin le plus court entre deux points
+Description of the project  
+Application of the A* algorithm to find the shortest path between two points
+
+## Commands
+`Left click` : Place start, end, and barrier points on the grid  
+`Right click` : Delete the selected points  
+`Space bar` : Run the code and draw the shortest path  
+`C` : Clear the grid
