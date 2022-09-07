@@ -93,14 +93,14 @@ def h(p1, p2):
     return abs(x1 - x2) + abs(y1 - y2)
 
 
-def reconstruct_path(came_from, current, draw):
+def reconstruct_path(came_from, current, draw): # DRAW THE SHORTEST PATH
     while current in came_from:
         current = came_from[current]
         current.make_path()
         draw()
 
 
-def algorithm(draw, grid, start, end):
+def algorithm(draw, grid, start, end): # A* ALGORITHM
     count = 0
     open_set = PriorityQueue()
     open_set.put((0, count, start))
